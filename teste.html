@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Um quiz interativo para testar seus conhecimentos">
+    <title>Quiz Café com Código</title>
+   <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Café com Código</h1>
+        <p>Teste seus conhecimentos sobre café e programação</p>
+    </header>
+    <main>
+        <!--Introdução-->
+        <section>
+            <h2>Sobre esse quiz</h2>
+            <p>Esse quiz foi desenvolvido para testar seus conhecimentos sobre <strong>programação e cafés.</strong></p>
+            <p>Você encontrará diferentes tipos de pergunta, incluindo múltipla escolha, textos e perguntas de datas. <Br>Desafie-se.</p>
+        </section>
+        <!--Pergunta 1: múltipla escolha-->
+        <section>
+            <h2>Qual propriedade CSS define a cor do texto?</h2>
+            <form>
+                <input type="radio" value="font-color" id="p1a" name="pergunta1">
+                <label for="p1a">font-color</label><br>
+                <input type="radio" value="text-color" id="p1b" name="pergunta1">
+                <label for="p1b">text-color</label><br>
+                <input type="radio" value="color" id="p1c" name="pergunta1">
+                <label for="p1c">color</label><br>
+                <input type="radio" value="text-style" id="p1d" name="pergunta1">
+                <label for="p1d">text-style</label>
+            </form>
+        </section>
+        <!--Pergunta 2: texto-->
+            <section>
+                    <h2>O principal componente do café que nos dá energia é a ______</h2>
+                    <form>
+                      <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta">
+                    </form>
+            </section>
+        <!--Pergunta 3: senha-->
+            <section>
+                    <h2>Escreva um exemplo de senha forte</h2>
+                    <form >
+                        <input type="password" id="p3" name="pergunta3" placeholder="Digite uma senha">
+                    </form>
+            </section>
+        <!--Pergunta 4: data-->
+            <section>
+               <h2>Em que data é celebrado o Dia Internacional do Café?</h2>
+             <form>
+                <input type="date" id="p4" name="pergunta4">
+             </form>
+            </section>
+        <!--Pregunta 5: seleção múltipla -->
+             <section>
+            <h2>Qual dessas tecnologias são consideradas linguagem de programação?</h2>
+            <form>
+              <input type="checkbox" id="p5a" name="pergunta5" value="JavaSript">
+              <label for="p5a">JavaSript</label><br>
+              <input type="checkbox" id="p5b" name="pergunta5" value="html">
+              <label for="p5b">HTML</label><br>
+              <input type="checkbox" id="p5c" name="pergunta5" value="Java">
+              <label for="p5c">Java</label><br>
+              <input type="checkbox" id="p5d" name="pergunta5" value="CSS">
+              <label for="p5d">CSS</label>
+            </form>
+            </section>
+        <!--Pergunta 6:uploud de arquivo-->
+            <section>
+            <h2>Faça o uploud de um arquivo contendo HTML.</h2>
+          <form>
+            <input type="file" id="p6" name="pergunta6">
+          </form>
+            </section>
+            <!--Pergunta 7: meunu suspenso -->
+            <section>
+                <h2>O café foi descoberto originalmente em qual continente?</h2>
+               <form>
+                <select name="pergunta7" id="p7">
+                    <option value="América do Sul">América do Sul</option>
+                    <option value=" Europa">Europa</option>
+                    <option value="África">África</option>
+                    <option value="Ásia">Ásia</option>
+                </select>
+               </form>
+            </section>
+        <!--Pergunta 8: imagem-->
+             <section>
+            <h2>Qual linguagem de programação é respresentada pelo logotipo abaixo?</h2>
+            <img src="perg8.jpg" alt="Logotipo de uma linguagem de programação"><br>
+            <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+             </section>
+        <!--Tabela de Pontuação-->
+             <section>
+             <h2>Tabela de Pontuação</h2>
+             <Table border="1">
+                <thead>
+                  <tr>
+                    <th>Pontuação</th>
+                    <th>Avaliação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>0-2</td>
+                    <td>Não desista!</td> 
+                </tr>
+                <tr>
+                    <td>3-4</td>
+                    <td>Você ainda precisa melhorar!</td> 
+                </tr>
+                <tr>
+                    <td>5-7</td>
+                    <td>Seu conhecimento está satisfatório!</td> 
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Parabéns! Você esta muito bem informado (a)</td> 
+                </tr>
+            </tbody>
+             <tfoot>
+                <tr>
+                    <td colspan="2">Boa sorte na próxima.</td>
+                </tr>
+             </tfoot>
+             </Table>
+             </section>
+        <!--Lista de respostas-->
+             <section>
+                <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Clique aqui para ver as respostas. </summary>
+                <ol>
+                    <li>color</li>
+                    <li>cafeína</li>
+                    <li>Abc#@192837.</li>
+                    <li>01/10/2015</li>
+                    <li>Javascript e Java</li>
+                    <li>O arquivo deve ter extensão HTML.</li>
+                    <li>África</li>
+                    <li>Java</li>
+                </ol>
+            </details>
+             </section>
+        <!--Formulário de feedback-->   
+            <section>
+                <h2>Dê o seu feedback</h2>
+                <form> 
+                 <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="comentário">Comentário</label>:</label><br>
+                    <textarea id="cometario" name="comentarios" rows="4"cols="50" placeholder="Digite seu comentário."></textarea><br>
+                    <button>Envie seu feedback</button>
+                 </fieldset>
+                </form>
+            </section>  
+    </main>
+    <footer>
+        <p class="paragrafo-footer"> &copy; Todos os direitos reservados.</p>
+        <p class="paragrafo-footer"> Para entrar em contato <a href="https://www.linkedin.com/in/nathalia-saraiva-43b37a1a9/" target="_blank" >clique aqui</a></p>
+    </footer>
+</body>
+</html>

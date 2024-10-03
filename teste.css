@@ -1,0 +1,175 @@
+/* Importa a fonte "Cabin" do Google Fonts, com variações de peso e estilo */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Define estilos para o corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding-left: 0; /* Remove o preenchimento à esquerda */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo da largura e altura */
+}
+
+body {
+    background-color: #f4f0ea; /* Define a cor de fundo do corpo */
+    color: #798252; /* Define a cor do texto */
+    font-family: "Cabin", sans-serif; /* Define a fonte principal como "Cabin" e uma alternativa genérica sans-serif */
+    font-weight: 400; /* Define o peso da fonte como 400 (normal) */
+}
+
+/* Define estilos para o cabeçalho */
+header {
+    padding: 1.2rem; /* Adiciona preenchimento interno ao cabeçalho */
+    background-color: #331f19; /* Define a cor de fundo do cabeçalho */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+}
+
+/* Define estilos para a seção principal */
+main {
+    padding: 1rem; /* Adiciona preenchimento interno à seção principal */
+    display: flex; /* Define o layout como flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    gap: 1.5rem; /* Define um espaço entre os itens */
+}
+
+/* Define estilos para as seções */
+section {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    gap: 1rem; /* Define um espaço entre os itens */
+}
+/* Estiliza os elementos <h2> */
+h2 {
+    color: #331f19; /* Define a cor do texto */
+    font-size: 1.2rem; /* Define o tamanho da fonte */
+}
+
+/* Estiliza os inputs do tipo radio e checkbox */
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #ccd595; /* Define a cor de destaque dos inputs */
+}
+
+/* Estiliza os inputs de texto, senha, data e email */
+input[type="text"], input[type="password"], input[type="date"], input[type="email"] {
+    width: 100%; /* Define a largura como 100% do elemento pai */
+    padding: 0.6rem; /* Adiciona preenchimento interno */
+    border: 2px solid #ccd595; /* Define a borda com 2px de espessura e cor específica */
+    outline: none; /* Remove o contorno padrão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    background-color: transparent; /* Define o fundo como transparente */
+}
+
+/* Estiliza o placeholder dos inputs */
+input::placeholder {
+    color: #cbbba7; /* Define a cor do texto do placeholder */
+}
+
+/* Estiliza os elementos <select> */
+select {
+    cursor: pointer; /* Define o cursor como pointer ao passar sobre o elemento */
+    background-color: #ccd595; /* Define a cor de fundo */
+    color: #331f19; /* Define a cor do texto */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    border: none; /* Remove a borda padrão */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estiliza as imagens */
+img {
+    width: 8rem; /* Define a largura da imagem */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+/* Estiliza a tabela */
+table {
+    width: 50%; /* Define a largura da tabela como 50% do elemento pai */
+    border-collapse: collapse; /* Remove os espaços entre as bordas das células */
+}
+
+/* Estiliza os cabeçalhos da tabela */
+th {
+    background-color: #ccd595; /* Define a cor de fundo dos cabeçalhos */
+    color: #331f19; /* Define a cor do texto dos cabeçalhos */
+    padding: 1rem; /* Adiciona preenchimento interno aos cabeçalhos */
+}
+
+/* Estiliza as células da tabela */
+td {
+    color: #331f19; /* Define a cor do texto das células */
+    padding: 1rem; /* Adiciona preenchimento interno às células */
+    text-align: center; /* Centraliza o texto dentro das células */
+}
+
+/* Estiliza as células do rodapé da tabela */
+tfoot td {
+    background-color: #331f19; /* Define a cor de fundo das células do rodapé */
+    color: #cbbba7; /* Define a cor do texto das células do rodapé */
+}
+
+/* Estiliza o elemento <details> */
+details {
+    background-color: #ccd595; /* Define a cor de fundo do elemento */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    padding: 1rem; /* Adiciona preenchimento interno */
+}
+
+/* Estiliza o elemento <summary> */
+summary {
+    color: #331f19; /* Define a cor do texto */
+    margin: 0.5rem; /* Adiciona uma margem ao redor do elemento */
+    cursor: pointer; /* Define o cursor como pointer ao passar sobre o elemento */
+}
+/* Estiliza a lista ordenada */
+ol {
+    margin-left: 1.5rem; /* Adiciona uma margem à esquerda da lista */
+}
+
+/* Estiliza os itens da lista ordenada */
+ol li {
+    padding: 0.5rem; /* Adiciona preenchimento interno aos itens da lista */
+}
+
+/* Estiliza o elemento <fieldset> */
+fieldset {
+    border: 2px solid #ccd595; /* Define a borda com 2px de espessura e cor específica */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    padding: 1rem; /* Adiciona preenchimento interno */
+}
+
+/* Estiliza o elemento <legend> */
+legend {
+    color: #331f19; /* Define a cor do texto */
+    padding: 0 0.5rem; /* Adiciona preenchimento interno horizontal */
+}
+
+/* Estiliza o elemento <textarea> */
+textarea {
+    outline: none; /* Remove o contorno padrão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    border: 2px solid #ccd595; /* Define a borda com 2px de espessura e cor específica */
+    background-color: transparent; /* Define o fundo como transparente */
+}
+
+/* Estiliza os botões */
+button {
+    background-color: #ccd595; /* Define a cor de fundo */
+    border: none; /* Remove a borda padrão */
+    padding: 0.8rem; /* Adiciona preenchimento interno */
+    color: #331f19; /* Define a cor do texto */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Define o cursor como pointer ao passar sobre o botão */
+}
+/* Estiliza o rodapé */
+footer {
+    background-color: #331f19; /* Define a cor de fundo do rodapé */
+    padding: 2rem; /* Adiciona preenchimento interno ao rodapé */
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+}
+
+/* Estiliza os parágrafos dentro do rodapé */
+.paragrafo-footer {
+    color: #f4f0ea; /* Define a cor do texto dos parágrafos no rodapé */
+}
+
+/* Estiliza os links dentro do rodapé */
+footer a {
+    text-decoration: none; /* Remove a decoração padrão dos links (sublinhado) */
+    color: #ccd595; /* Define a cor do texto dos links */
+}
